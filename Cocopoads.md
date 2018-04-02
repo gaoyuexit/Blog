@@ -42,7 +42,9 @@ tags: iOS
     直接改为: 
     s.source = { :git => "", tag => "#{s.version}"}
     ```
+    
     - 项目工程中创建 Podfile 文件并填写如下: 
+    
     
     ```
     # path代表会在某个路径下面寻找`YouLib.podspec`文件
@@ -150,17 +152,22 @@ tags: iOS
     s.default_subspec = ['EmptyView', 'PlaceholderTextView', 'UserManager', 'CellAnimator', 'KFImageProcessor']
 
     ```
+    
+    
     - 使用
         - 方式一: 
         
         ```
         pod 'LPFramework/CrashReport', :git => 'git@bitbucket.org:loopeer/lpframework.git', :commit => '7a9a19f'
         ```
+        
         - 方式二: (本地cocoapods repo包含自己私有索引库的情况下)
+        
         
         ```
         pod 'LPFramework/CrashReport'
         ```
+        
         
         - 方式三: (Podfile使用多个子库)
         
@@ -181,6 +188,7 @@ tags: iOS
         'LPFramework' => ['LPFramework/Assets/*']
     }
     ```
+    
     重新pod install
     这样形成的图片在以下的目录
     ![bundle_2](https://raw.githubusercontent.com/gaoyuexit/Blog/master/images/2018-3-25-Cocoapods/bundle_2.png)
@@ -331,8 +339,8 @@ e. 执行命令 `fastlane ManagerLib tag:0.1.0 target:LPFramework`
 UIImage *img = [UIImage imageNamed:@"1.png"];
 NSString *path = [[NSBundle mainBundle] pathForResource:@"1.png" ofType:nil];
 NSLog(@"%@ ---- %@", img, path);
-    
 ```
+
 1. 图片如果在目录中, 并且勾选了`Target Membership`, 则编译后会在编译形成的xx.app中, 显示包内容则会看到, img和path均不为空
 `NSBundle mainBundle`就是编译形成的xx.app显示包内容的路径
 
