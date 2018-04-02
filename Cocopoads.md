@@ -36,20 +36,20 @@ tags: iOS
     - 本地写好私有库并创建 podspec 文件
     - podspec 文件中的 
     
-    ```
-    将
-    s.source = { :git => "https://github/xxx.git", tag => "#{s.version}"}
-    直接改为: 
-    s.source = { :git => "", tag => "#{s.version}"}
-    ```
+        ```
+        将
+        s.source = { :git => "https://github/xxx.git", tag => "#{s.version}"}
+        直接改为: 
+        s.source = { :git => "", tag => "#{s.version}"}
+        ```
     
     - 项目工程中创建 Podfile 文件并填写如下: 
     
     
-    ```
-    # path代表会在某个路径下面寻找`YouLib.podspec`文件
-    pod 'YouLib', :Path => '../YouLib'
-    ```
+        ```
+        # path代表会在某个路径下面寻找`YouLib.podspec`文件
+        pod 'YouLib', :Path => '../YouLib'
+        ```
     
     
 4. cocoapods 本地私有仓库的示例工程
