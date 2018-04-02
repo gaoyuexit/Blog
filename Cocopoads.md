@@ -168,7 +168,7 @@ tags: iOS
 
 8. cocoapods库中的资源
     - XIB/nib的资源 
-![bundle_1](https://github.com/gaoyuexit/Blog/blob/master/images/2018-3-25-Cocoapods/bundle_1.png)
+![bundle_1](https://raw.githubusercontent.com/gaoyuexit/Blog/master/images/2018-3-25-Cocoapods/bundle_1.png)
 
     - 图片的资源
     // 如果使用`pod lib create LPFramework`创建的pod模板, 则将图片放入路径`'LPFramework/Assets/*`
@@ -180,7 +180,7 @@ tags: iOS
     ```
     重新pod install
     这样形成的图片在以下的目录
-    ![bundle_2](https://github.com/gaoyuexit/Blog/blob/master/images/2018-3-25-Cocoapods/bundle_2.png)
+    ![bundle_2](https://raw.githubusercontent.com/gaoyuexit/Blog/master/images/2018-3-25-Cocoapods/bundle_2.png)
 
     加载图片
     
