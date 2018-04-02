@@ -5,7 +5,7 @@ categories: iOS
 tags: iOS
 ---
 
-## cocoapods
+## Cocoapods
 1. `pod install` 会参照`Podfile.lock`文件中的版本去安装 
    `pod update` 会参照 `Podfile`文件中的版本去安装
     注意协同开发时候, pod库版本不一致的情况, 一定要保证版本同步
@@ -15,8 +15,9 @@ tags: iOS
     - `pod setup`会clone远程的spec库到本地 (git仓库)
     - `pod search xx`会在本地spec库中生成的的检索索引文件中检索
     - 本地生成索引文件在`/Users/gaoyu/Library/Caches/CocoaPods`目录下, 该目录下有: 
-        a. Pods文件夹, 里面放着很多下载的库的源码和spec文件, 所以以后的pod install安装会特别快, 因为有此本地缓存, 这个可以删除
-        b. search_index.json 生成的检索索引文件, 如果删除掉, 再次`pod search xx`, 会提示`Creating search index for spec repo 'master'`, 该文件大概有十几兆那么大
+    
+        - Pods文件夹, 里面放着很多下载的库的源码和spec文件, 所以以后的pod install安装会特别快, 因为有此本地缓存, 这个可以删除
+        - search_index.json 生成的检索索引文件, 如果删除掉, 再次`pod search xx`, 会提示`Creating search index for spec repo 'master'`, 该文件大概有十几兆那么大
     
     所以要生成自己的cocoapods框架的步骤如下: 
 
@@ -50,9 +51,10 @@ tags: iOS
     
     
 4. cocoapods 本地私有仓库的示例工程
-    方式一: 根据上面创建私有仓库的步骤进行完成之后, 在私有库文件夹下, 创建demo工程, demo工程也利用cocoapods的形式, 依赖私有仓库
-    方式二: 使用命令行创建pod库的模板库 (非常推荐)
+    - 方式一: 根据上面创建私有仓库的步骤进行完成之后, 在私有库文件夹下, 创建demo工程, demo工程也利用cocoapods的形式, 依赖私有仓库
+    - 方式二: 使用命令行创建pod库的模板库 (非常推荐)
     直接使用下面的命令, 不用走👆的第三部, 根据命令行的提示来生成模板, 自动填充
+    
     ```
     pod lib create LPExtension
     ```
@@ -75,7 +77,8 @@ tags: iOS
         ```
         pod repo add LPExtension git@bitbucket.loopeer.com.git
         ```
-    再去 `.cocoapods/repos`路径下, 包含`master(pods官方提供的公共的索引库)`, 还多了一个`LPExtension`自己的索引库
+        
+    - 再去 `.cocoapods/repos`路径下, 包含`master(pods官方提供的公共的索引库)`, 还多了一个`LPExtension`自己的索引库
     或者使用命令`pod repo`查看已有的索引库
     
     - 将本地代码仓库中的podspec文件提交到本地的新的索引库中,并推送到`远程私有索引库`中
