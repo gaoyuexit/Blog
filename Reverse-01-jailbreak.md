@@ -25,7 +25,10 @@ tags: iOS
 * 安装软件源 eg: PP助手源: http://apt.25pp.com
 * 进入软件源找到相应的软件, 进行安装
 * 如果`Cydia`安装软件安装不上,报错,失败等情况, 可以现在网络上下载`deb`格式的安装包, 然后将`deb安装包`放到目录`/var/root/Media/Cydia/AutoInstall`, 重启手机, `Cydia`就会自动安装deb文件
-* 例如: `iFile`该软件是由很多个`deb安装包构成`, 将这个软件的所有`deb`文件放到目录`/var/root/Media/Cydia/AutoInstall`, 重启手机,
+* 例如: `iFile`该软件是由很多个`deb安装包构成`, 将这个软件的所有`deb`文件放到目录`/var/root/Media/Cydia/AutoInstall`, 重启手机
+* 因为我是iOS11.0.3系统通过`Electra`方式进行的越狱, 因为[Saurik与Electra越狱工具开发者不和](http://news.tongbu.com/96160.html), `saurik`并未对`Cycript`进行iOS 11的适配，包括Cydia本身。解决方案: [bfinject](https://github.com/BishopFox/bfinject)
+
+
 
 
 ## 3. 必备软件
