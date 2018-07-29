@@ -23,6 +23,7 @@ tags: iOS
 `Cydia`安装软件的步骤: 
 
 * 安装软件源 eg: PP助手源: http://apt.25pp.com
+* 安装软件源: saurik(Cydia作者)的软件源: http://apt.saurik.com 或者 http://apt.saurik.com/cydia/
 * 进入软件源找到相应的软件, 进行安装
 * 如果`Cydia`安装软件安装不上,报错,失败等情况, 可以现在网络上下载`deb`格式的安装包, 然后将`deb安装包`放到目录`/var/root/Media/Cydia/AutoInstall`, 重启手机, `Cydia`就会自动安装deb文件
 * 例如: `iFile`该软件是由很多个`deb安装包构成`, 将这个软件的所有`deb`文件放到目录`/var/root/Media/Cydia/AutoInstall`, 重启手机
