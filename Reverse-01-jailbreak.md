@@ -48,6 +48,7 @@ tags: iOS
     
 * OpenSSH
 * VI IMproved (直接搜vim), 可以ssh登录到iPhone端, 使用vim编辑iPhone文件
+* APT 0.6 Transitional: 安装后可以使用apt-get, 安装各种Linux命令[安装](https://www.aliyun.com/jiaocheng/432048.html) 和 [命令](https://www.jianshu.com/p/e6136f97ab9d)
   
 ### Mac 端 
 
