@@ -84,6 +84,7 @@ tags: iOS
 * root账户: 最高权限账户, $HOME是 /var/root
 * mobile账户: 普通权限账户, $HOME是 /var/mobile, 只能操作一些普通文件, 不能操作系统级别的文件
 * 登录mobile账户: `ssh mobile@手机iP`, 输入密码: `alpine`
+* 切换账号: `su mobile`, `su root`
 
 > 越狱后, 为了手机的安全, 最好修改root/mobile账户的密码
 

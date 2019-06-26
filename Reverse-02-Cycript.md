@@ -8,19 +8,21 @@ tags: iOS
 # 逆向工程-02-Cycript
 
 ## 1. cycript的开启与关闭
-###开启:
-ssh进入iPhone
+
+### 开启:
+
+Cydia安装`Cycript`, ssh进入iPhone
  
 * 直接输入`cycript`, 就可以进入Cycript环境了
 * `cycript -p 进程ID` 例如: `cycript -p 3303`
 * `cycript -p 进程名称` 例如: `cycript -p SpringBoard`
 
-###关闭
+### 关闭
 
 * 取消输入: `Ctrl + C`
 * 退出: `ctrl + D`
 
-##2. PS命令
+## 2. PS命令
 1. `Cydia`安装`adv-cmds`
 2. ps指令是`process status`的缩写, 使用`ps`指令可以列出系统当前的进程
 3. 列出所有的进程 `ps -A`
@@ -55,7 +57,8 @@ bfinject注意事项:
 7. 筛选出当前页面内存中的某种类型的对象:  
     * `choose(UIViewController)` 打印当前页面内存中的所有控制器对象
     * `choose(UITableViewCell)` 打印当前页面内存中的所有cell对象
-8. todo
+8. 在`cycripte`环境中, 可以写函数, 例如该环境下 `function sum(a, b) { return a + b; }` , 按下回车键, 相当于定义了这个函数, 我们可以在该环境下, 输入命令: `sum(10, 20)`, 就会得出结果
+9. 根据上面可以定义函数的特性, 我们可以把常用的`cycript`代码封装到一个`.cy`文件中
 
 
     
